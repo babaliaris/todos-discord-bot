@@ -1,0 +1,14 @@
+{
+  "name": "todo_bot",
+  "version": "1.0.0",
+  "description": "A discord bot to help us withe the projects todos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikolaos Bampaliaris",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}

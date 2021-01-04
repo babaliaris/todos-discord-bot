@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const Discord       = require("discord.js");
 const createError   = require("./src/CreateError.js");
 const createTodo    = require("./src/CreateTodo.js");
@@ -197,4 +199,4 @@ client.on('messageReactionRemove', async (reaction, user) =>
 
 
 //Connect the bot to discord application.
-client.login("Nzk1NjQ4MTE1NjY2NTgzNTYz.X_MbDQ.FyhbdA8595kiKP7JcLYCOgHlnkI");
+client.login(process.env.TOKEN);

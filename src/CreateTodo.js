@@ -13,7 +13,10 @@ const createTodo = (opts)=>
     .setDescription(opts.desc);
 
     for (let i = 0; i < opts.sections.length; i++)
-        embened.addField(`TODO`, ` ${opts.sections[i]}`);
+    {
+        if (opts.sections[i])
+            embened.addField(`TODO`, ` ${opts.sections[i]}`);
+    }
 
     return embened;
 };
